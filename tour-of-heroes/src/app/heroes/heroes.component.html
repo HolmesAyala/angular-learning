@@ -1,0 +1,6 @@
+<h2>Hero list</h2>
+
+<app-add-hero (addHero)='onAddHero($event)'></app-add-hero>
+
+<app-hero-list [heroes]="heroes" (clickInItem)="onClickItemInList($event)" (removeHero)='onRemoveHero($event)'>
+</app-hero-list>

@@ -1,0 +1,15 @@
+<div *ngIf='hero'>
+  <div>
+    id: {{ hero.id }}
+  </div>
+
+  <div>
+    name: {{ hero.name }}
+  </div>
+
+  <div>
+    <input type="text" placeholder="name" [(ngModel)]="hero.name">
+  </div>
+
+  <button (click)='onClickInSaveButton($event)'>Save</button>
+</div>

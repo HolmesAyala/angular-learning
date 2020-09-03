@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  font-family: "arial", "sans serif";
+  box-sizing: border-box;
+}
+
+.spacer {
+  flex-grow: 1;
+}

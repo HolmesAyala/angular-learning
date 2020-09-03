@@ -1,0 +1,14 @@
+<div 
+  *ngIf="hero" 
+  class="hero-list-item" 
+  (click)="onClick()"
+  [class.hero-list-item-selected]="selected"
+>
+  <div class="id">{{ hero.id }}</div>
+
+  <span class='name'>{{ hero.name }}</span>
+
+  <div class='spacer'></div>
+
+  <button class='remove-button' (click)='onClickInRemoveButton($event)'>x</button>
+</div>

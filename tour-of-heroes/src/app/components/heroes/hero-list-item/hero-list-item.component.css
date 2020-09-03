@@ -1,0 +1,48 @@
+.hero-list-item {
+  display: flex;
+  align-items: center;
+  background-color: #fbfbfb;
+  padding-right: 16px;
+}
+
+.hero-list-item:hover {
+  cursor: pointer;
+  background-color: #eeeeee;
+}
+
+.hero-list-item-selected {
+  background-color: #d8d7d7!important;
+}
+
+.hero-list-item .id {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+  font-weight: bold;
+  color: white;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hero-list-item .name {
+  padding-left: 16px;
+}
+
+.hero-list-item .remove-button {
+  width: 32px;
+  height: 32px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.hero-list-item .remove-button:hover {
+  cursor: pointer;
+  background-color: rgb(255, 77, 112);
+}

@@ -1,0 +1,7 @@
+<div>
+  <div *ngFor="let message of messageService.messages">
+    {{ message.text }}
+
+    <button (click)='removeMessage(message.id)'>x</button>
+  </div>
+</div>

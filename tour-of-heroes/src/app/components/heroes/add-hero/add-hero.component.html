@@ -1,0 +1,9 @@
+<div>
+  <div>
+    <label for="TB_Name"></label>
+
+    <input id='TB_Name' type="text" #TB_Name>
+  </div>
+
+  <button (click)='onAddHero(TB_Name.value); TB_Name.value = ""'>Add</button>
+</div>

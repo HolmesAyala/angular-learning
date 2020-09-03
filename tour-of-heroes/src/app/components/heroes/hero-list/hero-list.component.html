@@ -1,0 +1,14 @@
+<div class='hero-list'>
+  <div *ngFor="let hero of heroes">
+    <app-hero-list-item 
+      [hero]="hero"
+      [selected]='selectedHero && selectedHero.id === hero.id' 
+      (clickEvent)="clickInItem.emit($event)"
+      (remove)='onRemoveHero($event)'>
+    </app-hero-list-item>
+  </div>
+</div>
+
+<div *ngIf="heroes.length === 0">
+  Without data
+</div>

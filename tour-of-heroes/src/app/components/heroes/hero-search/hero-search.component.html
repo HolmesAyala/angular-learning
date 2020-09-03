@@ -1,0 +1,11 @@
+<div class='hero-search'>
+  <h4><label for="TB_Search">Hero search</label></h4>
+
+  <input id='TB_Search' #TB_Search type="text" placeholder='search...' (input)='search(TB_Search.value)'>
+
+  <ul class='search-result'>
+    <li *ngFor='let hero of heroes$ | async'>
+      <a routerLink='/heroes/${hero.id}'>{{hero.name}}</a>
+    </li>
+  </ul>
+</div>

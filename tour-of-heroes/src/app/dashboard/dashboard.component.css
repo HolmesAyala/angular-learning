@@ -1,0 +1,24 @@
+.hero-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero-list > * {
+  margin: 4px;
+}
+
+.hero {
+  width: 128px;
+  height: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+}
+
+.hero:hover {
+  cursor: pointer;
+  background-color: #f0f0f0;
+  transition: 0.4s;
+}

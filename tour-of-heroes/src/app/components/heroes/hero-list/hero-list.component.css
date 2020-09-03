@@ -1,0 +1,7 @@
+.hero-list > * {
+  margin-bottom: 8px;
+}
+
+.hero-list:last-child {
+  margin-bottom: 0px;
+}
