@@ -4,6 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { HeroesComponent } from './heroes/heroes.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroDetailPageComponent } from './hero-detail-page/hero-detail-page.component';
+import { ObservablesPageComponent } from './observables-page/observables-page.component';
+import { CacheHttpRequestPageComponent } from './cache-http-request-page/cache-http-request-page.component';
 
 const routes: Routes = [
   {
@@ -22,6 +24,14 @@ const routes: Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent,
+  },
+  {
+    path: 'observables',
+    component: ObservablesPageComponent,
+  },
+  {
+    path: 'cache',
+    component: CacheHttpRequestPageComponent,
   },
 ];
 

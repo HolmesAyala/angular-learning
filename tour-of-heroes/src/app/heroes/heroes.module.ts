@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { PipesModule } from '../pipes/pipes.module';
 /**
  * Components
  */
@@ -10,7 +11,7 @@ import { HeroListItemComponent } from '../components/heroes/hero-list-item/hero-
 import { AddHeroComponent } from '../components/heroes/add-hero/add-hero.component';
 
 @NgModule({
-  imports: [FormsModule, BrowserModule],
+  imports: [PipesModule, FormsModule, BrowserModule],
   declarations: [HeroesComponent, HeroListComponent, HeroListItemComponent, AddHeroComponent],
   exports: [HeroesComponent],
 })

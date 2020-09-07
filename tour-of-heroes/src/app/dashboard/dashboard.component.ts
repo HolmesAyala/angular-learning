@@ -10,6 +10,8 @@ import { Hero } from '../../interfaces/hero';
 export class DashboardComponent implements OnInit {
   heroes: Hero[] = [];
 
+  ellipsisLength = 5;
+
   constructor(private heroService: HeroService) {}
 
   ngOnInit(): void {

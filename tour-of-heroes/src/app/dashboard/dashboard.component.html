@@ -1,9 +1,14 @@
 <h2>Top heroes</h2>
 
+<label>
+  ellipsis length
+  <input type='number' [(ngModel)]='ellipsisLength'>
+</label>
+
 <div class='hero-list'>
   <a *ngFor='let hero of heroes' routerLink='/heroes/{{hero.id}}'>
     <div class="hero">
-      <h4>{{ hero.name }}</h4>
+      <h4>{{ (hero | heroUpperName).name | ellipsisText:ellipsisLength }}</h4>
     </div>
   </a>
 </div>

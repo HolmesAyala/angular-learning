@@ -5,6 +5,8 @@ import { HeroesModule } from './heroes/heroes.module';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { PipesModule } from './pipes/pipes.module';
+import { ComponentComunicationModule } from './component-comunication/component-comunication.module';
 /**
  * Services
  */
@@ -23,6 +25,8 @@ import { HeroSearchComponent } from './components/heroes/hero-search/hero-search
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroDetailPageComponent } from './hero-detail-page/hero-detail-page.component';
+import { ObservablesPageComponent } from './observables-page/observables-page.component';
+import { CacheHttpRequestPageComponent } from './cache-http-request-page/cache-http-request-page.component';
 
 @NgModule({
   declarations: [
@@ -32,8 +36,11 @@ import { HeroDetailPageComponent } from './hero-detail-page/hero-detail-page.com
     HeroDetailPageComponent,
     HeroDetailsComponent,
     HeroSearchComponent,
+    ObservablesPageComponent,
+    CacheHttpRequestPageComponent,
   ],
   imports: [
+    PipesModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
@@ -42,6 +49,7 @@ import { HeroDetailPageComponent } from './hero-detail-page/hero-detail-page.com
     }),
     FormsModule,
     HeroesModule,
+    ComponentComunicationModule
   ],
   providers: [HeroService, MessageService],
   bootstrap: [AppComponent],

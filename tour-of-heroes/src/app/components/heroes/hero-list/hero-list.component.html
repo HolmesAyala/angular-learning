@@ -1,5 +1,5 @@
 <div class='hero-list'>
-  <div *ngFor="let hero of heroes">
+  <div *ngFor="let hero of (heroes | heroEvenLengthNameImpure)">
     <app-hero-list-item 
       [hero]="hero"
       [selected]='selectedHero && selectedHero.id === hero.id' 

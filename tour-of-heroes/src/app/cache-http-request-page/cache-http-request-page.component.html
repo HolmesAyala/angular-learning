@@ -1,0 +1,11 @@
+<div>
+  <h2>Cached http data</h2>
+
+  <div *ngFor='let hero of ("/assets/heroes.json" | httpGetCache)'>
+    {{ hero.name }}
+  </div>
+
+  <pre>
+    {{ "/assets/heroes.json" | httpGetCache | json }}
+  </pre>
+</div>
